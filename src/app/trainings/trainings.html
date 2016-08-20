@@ -1,0 +1,20 @@
+<div class="main-container">
+  <hackathon-header></hackathon-header>
+  <main class="training row">
+  	<form name="trainingForm" novalidate>
+	    <div class="col s4 form-grid" ng-repeat="field in $ctrl.forms.fields track by $index">
+	    	<div class="input-field col s12">
+	          	<textarea id="{{$index}}" class="materialize-textarea" length="120" ng-model="field.text"></textarea>
+            	<label for="{{$index}}">Texto</label>
+	        </div>
+	        <div class="input-field col s12">
+	        	<span class="type" ng-repeat="type in field.types">
+          			<input type="radio" name="{{$index + type.text}}" id="{{$index + type.text}}" value="{{type.text}}" ng-model="field.type" />
+      				<label for="{{$index + type.text}}">{{type.text}}</label>
+      			</span>
+	        </div>
+	    </div>
+	</form>
+  </main>
+  <hackathon-footer></hackathon-footer>
+</div>
