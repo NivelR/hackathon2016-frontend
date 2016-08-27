@@ -1,7 +1,7 @@
 <div class="title row">
 	<div class="col s12">
 	  	<div class="search-field col s6 offset-s2">
-		  <input id="first_name" type="text" class="validate" ng-model="$ctrl.text">
+		  <input id="first_name" type="text" class="validate" placeholder="Tweet, hashtag, etc ..." ng-model="$ctrl.text" ng-keydown="$event.which === 13 && $ctrl.analyze()">
 		</div>
 		<a class="col s2 waves-effect waves-light btn-large btn-analyze" ng-click="$ctrl.analyze()">
 			<i class="material-icons left">hearing</i>

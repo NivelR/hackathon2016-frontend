@@ -42,6 +42,9 @@ a {
   flex: 1;
   font-size: 1.5rem;
   margin: 1rem;
+  a:hover {
+    color: #cf4646;
+  }
 }
 .header-date {
   flex: 1;
@@ -87,7 +90,7 @@ a {
     padding-top: 5px;
     font-size: 2em;
     &:hover {
-      color: #ccc;
+      color: #cf4646;
     }
   }
 }
@@ -170,10 +173,14 @@ span.name {
   font-size: 2em;
 }
 
-.R {
+.r {
   background-color: #CFB646!important;
 }
 
-.B {
+.b {
   background-color: #57B03B!important;
+}
+
+.result h2 {
+  line-height: 1.2;
 }

@@ -12,7 +12,7 @@ function ResultController($http, $stateParams, $state) {
   vm.text = $state.params.text;
 
   $http
-    .get('http://localhost:4000/hello?q=' + vm.text)
+    .get('http://192.168.43.139:4000/hello?q=' + vm.text)
     .then(function (response) {
       vm.result = response.data;
     });
